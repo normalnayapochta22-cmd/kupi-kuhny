@@ -1,0 +1,653 @@
+/* =============================================
+   KUPI KUHNY - Responsive Styles
+   Mobile First Approach
+   ============================================= */
+
+/* Extra Large Screens (1440px+) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Large Screens (1200px - 1439px) */
+@media (max-width: 1439px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Medium-Large Screens (1024px - 1199px) */
+@media (max-width: 1199px) {
+    :root {
+        --section-padding: 80px;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .nav-list {
+        gap: 20px;
+    }
+
+    .nav-list a {
+        font-size: 0.9rem;
+    }
+
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .assortment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 1023px) {
+    :root {
+        --section-padding: 70px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    /* Header */
+    .nav {
+        display: none;
+    }
+
+    .header-contacts {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Prices */
+    .prices-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price-card.popular {
+        transform: none;
+        order: -1;
+    }
+
+    .price-card.popular:hover {
+        transform: translateY(-10px);
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Timeline */
+    .timeline {
+        padding-left: 40px;
+    }
+
+    .timeline-line {
+        left: 20px;
+    }
+
+    .timeline-number {
+        left: 20px;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(odd) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-item .timeline-content,
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        text-align: left;
+        padding-left: 40px;
+        padding-right: 0;
+        margin-left: 20px;
+    }
+
+    /* Lead Form */
+    .lead-form-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .lead-form-content {
+        text-align: center;
+    }
+
+    .lead-form-benefits {
+        align-items: center;
+    }
+
+    /* Contacts */
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contacts-map {
+        order: -1;
+    }
+
+    .map-placeholder {
+        height: 300px;
+    }
+
+    /* Prices info */
+    .prices-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Small Tablets / Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+    :root {
+        --section-padding: 60px;
+        --container-padding: 15px;
+    }
+
+    /* Typography */
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    /* Header */
+    .header .container {
+        height: 70px;
+    }
+
+    .mobile-menu {
+        top: 70px;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 70px;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+
+    .hero-badges {
+        justify-content: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-cta {
+        align-items: center;
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+
+    /* Advantages */
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .advantage-card {
+        padding: 30px 25px;
+    }
+
+    /* Assortment */
+    .tabs-nav {
+        gap: 8px;
+    }
+
+    .tab-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .assortment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-filter {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+
+    .portfolio-img-placeholder {
+        height: 220px;
+    }
+
+    /* Timeline */
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-item .timeline-content,
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        padding-left: 30px;
+        margin-left: 15px;
+    }
+
+    /* Lead Form */
+    .lead-form-title {
+        font-size: 1.75rem;
+    }
+
+    .lead-form {
+        padding: 30px 25px;
+    }
+
+    /* FAQ */
+    .faq-question {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    .faq-answer p {
+        padding: 0 20px 15px;
+    }
+
+    /* Contacts */
+    .messenger-buttons {
+        flex-direction: column;
+    }
+
+    .messenger-btn {
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    /* Scroll top */
+    .scroll-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Modals */
+    .modal-content {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+}
+
+/* Mobile Phones (320px - 575px) */
+@media (max-width: 575px) {
+    :root {
+        --section-padding: 50px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+
+    .btn-lg {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .badge {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Advantages */
+    .advantage-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .advantage-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Prices */
+    .price-card {
+        padding: 30px 20px;
+    }
+
+    .price-amount {
+        font-size: 2rem;
+    }
+
+    .popular-badge {
+        font-size: 0.75rem;
+        padding: 6px 18px;
+    }
+
+    /* Portfolio */
+    .portfolio-img-placeholder {
+        height: 200px;
+    }
+
+    .portfolio-overlay {
+        padding: 20px;
+    }
+
+    .portfolio-info h4 {
+        font-size: 1.1rem;
+    }
+
+    /* Timeline */
+    .timeline-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .timeline-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .timeline-content h4 {
+        font-size: 1.1rem;
+    }
+
+    /* Lead form */
+    .lead-form-title {
+        font-size: 1.5rem;
+    }
+
+    .lead-form-benefits li {
+        font-size: 1rem;
+    }
+
+    .form-group input {
+        padding: 15px 18px;
+    }
+
+    /* Contacts */
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .contact-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Map */
+    .map-placeholder {
+        height: 250px;
+    }
+}
+
+/* Extra Small Phones (under 320px) */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .tab-btn {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 50px;
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+}
+
+/* High DPI / Retina displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Ensure sharp rendering on retina */
+    .logo-placeholder,
+    .advantage-icon,
+    .timeline-icon {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .pulse {
+        animation: none;
+    }
+
+    .hero-content,
+    .hero-badges,
+    .hero-title,
+    .hero-subtitle,
+    .hero-cta {
+        animation: none;
+        opacity: 1;
+    }
+
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* Dark mode support (optional, can be enabled later) */
+@media (prefers-color-scheme: dark) {
+    /*
+    :root {
+        --white: #1a1a2e;
+        --light-gray: #16213e;
+        --dark-gray: #e0e0e0;
+        --text-color: #ffffff;
+        --text-light: #a0a0a0;
+    }
+    */
+}
+
+/* Print styles */
+@media print {
+    .header,
+    .hero-scroll,
+    .scroll-top,
+    .mobile-menu,
+    .modal,
+    .btn,
+    .hero-cta,
+    .lead-form-section,
+    .contacts-map {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 20px 0;
+    }
+
+    .hero-bg,
+    .hero-overlay {
+        display: none;
+    }
+
+    .hero-content {
+        color: black;
+    }
+
+    .hero-title,
+    .hero-subtitle {
+        color: black;
+    }
+
+    section {
+        page-break-inside: avoid;
+        padding: 30px 0;
+    }
+
+    .section-title {
+        color: black;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+}
+
+/* Focus visible for accessibility */
+@media (hover: hover) {
+    :focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+    }
+}
+
+/* Touch devices */
+@media (hover: none) {
+    .portfolio-overlay {
+        opacity: 1;
+        background: linear-gradient(to top, rgba(44, 62, 80, 0.9) 0%, rgba(44, 62, 80, 0) 70%);
+    }
+
+    .portfolio-zoom {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .advantage-card:hover {
+        transform: none;
+    }
+
+    .price-card:hover {
+        transform: none;
+    }
+
+    .price-card.popular:hover {
+        transform: scale(1.05);
+    }
+}
