@@ -870,16 +870,30 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio-img-placeholder {
     height: 280px;
     background: linear-gradient(135deg, #e8e8e8 0%, #d0d0d0 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform var(--transition-slow);
+    position: relative;
+    overflow: hidden;
 }
 
 .portfolio-img-placeholder::after {
     content: 'Фото кухни';
     color: #888;
     font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.portfolio-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
 }
 
 .portfolio-overlay {
@@ -1291,9 +1305,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contacts-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
 }
 
@@ -1301,6 +1314,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    max-width: 600px;
+    width: 100%;
 }
 
 .contact-item {
