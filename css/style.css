@@ -1380,12 +1380,12 @@ h1, h2, h3, h4, h5, h6 {
     transition: all var(--transition-base);
 }
 
-.messenger-btn.whatsapp {
-    background: #25D366;
+.messenger-btn.max {
+    background: #2688EB;
 }
 
-.messenger-btn.whatsapp:hover {
-    background: #1fb855;
+.messenger-btn.max:hover {
+    background: #1a73d4;
     transform: translateY(-2px);
 }
 
