@@ -1398,6 +1398,15 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
 }
 
+.messenger-btn.whatsapp {
+    background: #25D366;
+}
+
+.messenger-btn.whatsapp:hover {
+    background: #1da851;
+    transform: translateY(-2px);
+}
+
 .contacts-map {
     border-radius: var(--radius-lg);
     overflow: hidden;
